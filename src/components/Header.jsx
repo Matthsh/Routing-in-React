@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-
+import styles from '../css/Header.module.css'
 function Header() {
 
     const navigate = useNavigate();
@@ -13,9 +13,9 @@ function Header() {
     }
     return (
         <div>
-            <ul>
-                <li><button onClick={home}>home</button></li>
-                <li><button onClick={about}>about</button></li>
+            <ul className={styles.list}>
+                <li className={styles.item}><button onClick={home}>home</button></li>
+                <li className={styles.item}><button onClick={about}>about</button></li>
             </ul>
         </div>
     )
